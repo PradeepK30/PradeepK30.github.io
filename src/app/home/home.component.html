@@ -1,0 +1,23 @@
+<h4>Welcome to Home Angular 9</h4>
+<div >
+    <a routerLink="/about">About</a>
+    <br>
+    <a href="/transaction">Transaction</a>
+    <br>
+    <a routerLink="/admin">Admin</a>
+    <br>
+</div>
+
+
+<button (click)="toggleShow()" type="checkbox" >show/hide</button>
+<p *ngIf="order">
+    Order value {{order}}
+</p>
+<p *ngIf="filter">
+    filter value {{filter}}
+</p>
+<div *ngIf="isShown" class="row container-fluid"  id="divshow" >
+Div Content
+
+</div>
+
